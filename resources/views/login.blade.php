@@ -26,21 +26,19 @@
         <!-- Outer Row -->
         <div class="row justify-content-center">
             <div class="col-lg-6">
-                <?php if(session()->has('success')): ?>
+                @if (session()->has('success'))
                     <div class="alert alert-success alert-dismissible fade show" role="alert">
-                        <?php echo e(session('success')); ?>
-
+                        {{session('success')}}
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
-                <?php endif; ?>
+                @endif
 
-                <?php if(session()->has('LoginError')): ?>
+                @if (session()->has('LoginError'))
                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                        <?php echo e(session('LoginError')); ?>
-
+                        {{session('LoginError')}}
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
-                <?php endif; ?>
+                @endif
                 <div class="card o-hidden border-0 shadow-lg my-5">
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
@@ -53,29 +51,14 @@
                                     </div>
 
                                     <form action="login" method="post" class="user">
-                                        <?php echo csrf_field(); ?>
+                                        @csrf
                                         <div class="form-group">
-                                            <input type="email" name="email" class="form-control form-control-user <?php $__errorArgs = ['email'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>" placeholder="Enter Email Address..." autofocus required value="<?php echo e(old('email')); ?>">
-                                            <?php $__errorArgs = ['email'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?>
+                                            <input type="email" name="email" class="form-control form-control-user @error('email') is-invalid @enderror" placeholder="Enter Email Address..." autofocus required value="{{old('email')}}">
+                                            @error ('email')
                                                 <div class="invalid-feedback">
-                                                    <?php echo e($message); ?>
-
+                                                    {{$message}}
                                                 </div>
-                                            <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
+                                            @enderror
                                         </div>
                                         <div class="form-group">
                                             <input type="password" name="password" class="form-control form-control-user" placeholder="Password" required>
@@ -128,4 +111,3 @@ unset($__errorArgs, $__bag); ?>
 </body>
 
 </html>
-<?php /**PATH C:\xampp\htdocs\quadran\resources\views/login.blade.php ENDPATH**/ ?>
