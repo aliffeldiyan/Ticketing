@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dashboard Ticketing</title>
+    <title>Dashboard Ticketing </title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <nav>
     <div class="nav-container">
             <ul>
-                <li style="list-style:none">
+                <li class="list-unstyled">
                     <a href="#" class="nav-head">Quadran</a>
                 </li>
                 <hr class="hr-line">
-                <li style="list-style:none">
+                <li class="list-unstyled">
                     <a href="#" class="nav-ticket">Create Ticket</a>
                 </li>
                 <hr class="hr-line-ticket">
-                <li style="list-style:none">
+                <li style="list-unstyled">
                     <a href="#" class="nav-list">List Ticket</a>
                 </li>
-                <li style="list-style:none">
+                <li style="list-unstyled">
                     <a href="login" class="logout" >Logout </a>
                 </li>
                 <a href="#"><img class="vector-btn-left" src="logo/vector-left.svg" alt=""></a>
