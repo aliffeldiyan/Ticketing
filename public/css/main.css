@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.nav-container{
+    position: fixed;
+    width: 184px;
+    height: 768px;
+    left: 0px;
+    top: -1px;
+    
+    background: #605CFF;
+    z-index: 99;
+}
+
+a{
+ text-decoration: none;
+}
+
+.nav-head{
+    position: fixed;
+    width: 114.26px;
+    height: 32.29px;
+    left: 34.87px;
+    top: 14px;
+    
+    font-family: roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+.hr-line{
+    position: fixed;
+    width: 146px;
+    height: 0px;
+    left: 19px;
+    top: 61px;
+    
+    border: 1px solid #FFFFFF;
+}
+
+.nav-ticket{
+    position: fixed;
+    width: 153px;
+    height: 28px;
+    left: 15px;
+    top: 82px;
+    
+    font-family: roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+.hr-line-ticket{
+    position: fixed;
+    width: 146px;
+    height: 0px;
+    left: 19px;
+    top: 110px;
+    
+    border: 1px solid #FFFFFF;
+}
+
+.nav-list{
+    position: fixed;
+    width: 119px;
+    height: 28px;
+    left: 30px;
+    top: 148px;
+    
+    font-family: roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+.logout{
+    position: fixed;
+    width: 78px;
+    height: 28px;
+    left: 51px;
+    top: 90%;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+.vector-btn-left{
+    position: fixed;
+    left: 9.4%;
+    right: 88.53%;
+    top: 47.27%;
+    bottom: 49.96%;
+}
+
+.head-box{
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    top: 0%;
+    background: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.28);
+    z-index: 50;
+}
+
+.search-box{
+    position: absolute;
+    width: 281px;
+    height: 20px;
+    left: 229px;
+    top: 22px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.49);
+}
+
+.search-border{
+    position: fixed;
+    width: 379px;
+    height: 36px;
+    left: 199px;
+    top: 14px;
+
+    text-align: center;
+    
+    background: rgba(196, 196, 196, 0.3);
+    border-style: hidden;
+    border-radius: 28px;
+}
+
+.btn-search{
+    position: fixed;
+    width: 52px;
+    height: 39px;
+    left: 529px;
+    top: 14px;
+    
+    background: #605CFF;
+    border-radius: 17px;
+}
+
+.search-btn{
+    position: fixed;
+    width: 40px;
+    height: 27px;
+    left: 535px;
+    top: 20px;
+}
+
+.shape-btn{
+    position: fixed;
+    width: 24px;
+    height: 24px;
+    left: 1100px;
+    top: 25px;
+}
+
+.mail-btn
+{
+    position: fixed;
+    width: 28px;
+    height: 28px;
+    left: 1159px;
+    top: 23px;
+}
+
+.line{
+    position: fixed;
+    width: 45px;
+    height: 0px;
+    left: 1204px;
+    top: 33px;
+    
+    border: 1px solid rgba(0, 0, 0, 0.33);
+    transform: rotate(90deg);
+}
+
+.your-name{
+    position: fixed;
+    left: 1240px;
+    top: 5px;
+    
+    font-family: roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: rgba(0, 0, 0, 0.49);
+}
+
+.icon-btn{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    left: 1360px;
+    top: 14px;
+    
+}
+
+.wrapper{
+    position: absolute;
+    left: 250px;
+    top: 13%;
+    border-radius: 0px;
+    width: 1230px;
+    height: 635px;
+    
+    background: #F0F0F0;
+    z-index: 10;
+}
+
+h3{
+    position:absolute;
+    width: 180.41px;
+    height: 33.51px;
+    left: 525px;
+}
+
+.email{
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    width: 58.69px;
+    height: 23.46px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+::placeholder{
+    text-align: center;
+}
+
+.email-input{
+    position: absolute;
+    left: 2%;
+    top: 15%;
+    width: 500px;
+    height: 50px;
+    
+    background: rgba(196, 196, 196, 0.3);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.platform{
+    position: absolute;
+    top: 24%;
+    left: 2%;
+    width: 60.px;
+    height: 23px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+select{
+    text-align: center;
+}
+.platform-input{
+    position: absolute;
+    left: 2%;
+    top: 29%;
+    width: 500px;
+    height: 50px;
+    
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.kategori{
+    position: absolute;
+    top: 38%;
+    left: 2%;
+    width: 60.px;
+    height: 23px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+.kategori-input{
+    position: absolute;
+    left: 2%;
+    top: 43%;
+    width: 500px;
+    height: 50px;
+    
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.sub-kategori{
+    position: absolute;
+    top: 52%;
+    left: 2%;
+    width: 60.px;
+    height: 23px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+.sub-kategori-input{
+    position: absolute;
+    left: 2%;
+    top: 57%;
+    width: 500px;
+    height: 50px;
+    
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.deskripsi{
+    position: absolute;
+    top: 66%;
+    left: 2%;
+    width: 60.px;
+    height: 23px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+textarea{
+    width: 200px;
+}
+
+.deskripsi-input{
+    position: absolute;
+    width: 500px;
+    height: 120px;
+    left: 2%;
+    top: 71%;
+    margin: 1px;
+    text-align: left;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 25px;
+    resize: none;
+}
+
+.upload{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 106.51px;
+    height: 23.46px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+.btn-upload{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    width: 500px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #605CFF;
+    border-radius: 25px;
+}
+.max-img{
+    position: absolute;
+    left: 57%;
+    top: 23%;
+    width: 307.56px;
+    height: 13.4px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.kirim{
+    position: absolute;
+    left: 50%;
+    top: 29%;
+    width: 500px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #2FE056;
+    border-radius: 25px;
+}
+
+.website{
+    position: absolute;
+    font-family: roboto;
+    left: 500px;
+    top: 90%;
+}

@@ -1,0 +1,443 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: "roboto", "font awesome 5 free";
+}
+
+.nav-container{
+    background: #605CFF;
+    border-radius: 8px;
+    position: absolute;
+    width: 272px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-head{
+    position: absolute;
+    width: 147px;
+    height: 41px;
+    left: 62px;
+    top: 30px;
+
+    font-family: Font Awesome 5 Free;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 41px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.nav-ticket{
+    position: absolute;
+    width: 191px;
+    height: 35px;
+    left: 40px;
+    top: 151px;
+
+    font-family: Font Awesome 5 Free;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 34px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.nav-list{
+    position: absolute;
+    width: 148px;
+    height: 35px;
+    left: 62px;
+    top: 218px;
+    
+    font-family: Font Awesome 5 Free;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 34px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+head-box{
+    position: absolute;
+    width: 1440px;
+    height: 85px;
+    left: 0px;
+    top: 85px;
+    
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.search-btn{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 634px;
+    top: 28px;
+}
+
+.search-box{
+    position: absolute;
+    width: 392px;
+    height: 51px;
+    left: 284px;
+    top: 17px;
+
+    background: rgba(196, 196, 196, 0.3);
+    border-radius: 25px;
+}
+
+.input-search{
+    width: 273px;
+    height: 27px;
+}
+
+.hr-line{
+    position: absolute;
+    width: 211px;
+    height: 0px;
+    left: 30px;
+    top: 110px;
+
+    border: 1px solid #FFFFFF;
+}
+
+.hr-line-ticket{
+    position: absolute;
+    width: 211px;
+    height: 0px;
+    left: 30px;
+    top: 110px;
+    
+    border: 1px solid #FFFFFF;
+}
+
+.logout{
+    position: absolute;
+    width: 98px;
+    height: 35px;
+    left: 76px;
+    top: 951px;
+    
+    font-family: Font Awesome 5 Free;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 34px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+.vector-btn-left{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 222px;
+    top: 487px;
+}
+
+.header-container{
+    position: absolute;
+    width: 1037px;
+    height: 705px;
+    left: 337px;
+    top: 155px;
+    
+    background: rgba(255, 254, 254, 0.87);
+}
+
+.email{
+    position: absolute;
+    width: 54px;
+    height: 21px;
+    left: 363px;
+    top: 213px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #000000;
+}
+
+.email-input{
+    position: absolute;
+    width: 446px;
+    height: 51px;
+    left: 363px;
+    top: 242px;
+    
+    background: rgba(196, 196, 196, 0.3);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.platform{
+    position: absolute;
+    width: 79px;
+    height: 21px;
+    left: 363px;
+    top: 312px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #000000;
+}
+
+.platform-input{
+    position: absolute;
+    width: 446px;
+    height: 51px;
+    left: 363px;
+    top: 341px;
+    
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.kategori{
+    position: absolute;
+    width: 77px;
+    height: 21px;
+    left: 363px;
+    top: 411px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #000000;
+}
+
+.kategori-input{
+    position: absolute;
+    width: 446px;
+    height: 51px;
+    left: 363px;
+    top: 440px;
+    
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.sub-kategori{
+    position: absolute;
+    width: 112px;
+    height: 21px;
+    left: 363px;
+    top: 510px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #000000;
+}
+
+.sub-kategori-input{
+    position: absolute;
+    width: 446px;
+    height: 51px;
+    left: 363px;
+    top: 539px;
+
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.deskripsi{
+    position: absolute;
+    width: 156px;
+    height: 21px;
+    left: 363px;
+    top: 610px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #000000;
+}
+
+.deskripsi-input{
+    position: absolute;
+    width: 446px;
+    height: 160px;
+    left: 363px;
+    top: 651px;
+    
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.upload{
+    position: absolute;
+    width: 98px;
+    height: 21px;
+    left: 864px;
+    top: 213px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #000000;
+}
+
+.btn-upload{
+    position: absolute;
+    width: 446px;
+    height: 51px;
+    left: 864px;
+    top: 242px;
+    
+    background: #605CFF;
+    border-radius: 25px;
+}
+
+.max-img{
+    position: absolute;
+    width: 283px;
+    height: 12px;
+    left: 945px;
+    top: 301px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #000000;
+}
+
+.kirim{
+    position: absolute;
+    width: 446px;
+    height: 51px;
+    left: 864px;
+    top: 341px;
+    
+    background: #2FE056;
+    border-radius: 25px;
+}
+
+h3{
+    position: absolute;
+    width: 166px;
+    height: 30px;
+    left: calc(50% - 166px/2 + 136px);
+    top: calc(50% - 30px/2 - 340px);
+
+    font-family: Font Awesome 5 Free;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #000000;
+}
+
+.website{
+    position: absolute;
+    width: 132px;
+    height: 16px;
+    left: 720px;
+    top: 974px;
+    
+    font-family: Font Awesome 5 Free;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #797979;    
+}
+
+.header-container-ticket{
+    position: absolute;
+    width: 1037px;
+    height: 43px;
+    left: calc(50% - 1037px/2 + 135.5px);
+    top: calc(50% - 43px/2 - 339.5px);
+    
+    background: rgba(196, 196, 196, 0.25);
+}
