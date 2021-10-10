@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>login</title>
+    <title>Login Ticketing</title>
 
     <!-- Custom fonts for this template-->
     <link href="css/all.min.css" rel="stylesheet" type="text/css">
