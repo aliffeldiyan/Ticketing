@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
     <title>Dashboard Ticketing </title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <nav>
-    <div class="nav-container">
+        <div class="nav-container">
             <ul>
                 <li class="list-unstyled">
                     <a href="#" class="nav-head">Quadran</a>
@@ -20,14 +22,14 @@
                 </li>
                 <hr class="hr-line-ticket">
                 <li style="list-unstyled">
-                    <a href="#" class="nav-list">List Ticket</a>
+                    <a href="/list" class="nav-list">List Ticket</a>
                 </li>
                 <li style="list-unstyled">
-                    <a href="login" class="logout" >Logout </a>
+                    <a href="login" class="logout">Logout </a>
                 </li>
                 <a href="#"><img class="vector-btn-left" src="logo/vector-left.svg" alt=""></a>
             </ul>
-    </div>
+        </div>
     </nav>
     <div class="head-box">
         <input class="search-border" type="text" placeholder="Search For...">
@@ -43,7 +45,7 @@
         <div class="wrapper">
             <form action="#">
                 <div class="head-container-ticket">
-                <h3>Create Ticket</h3>
+                    <h3>Create Ticket</h3>
                 </div>
                 <label class="email" for="email">Email :</label>
                 <input class="email-input" type="email" placeholder="YourName@gmail.com" style="alignt-center" readOnly>
@@ -69,7 +71,7 @@
                 </select>
                 <label class="deskripsi" for="deskripsi">Deskripsi Masalah :</label>
                 <div class="border-text">
-                <textarea class="deskripsi-input" name="deskripsi" id="deskripsi" cols="30" rows="10"></textarea>
+                    <textarea class="deskripsi-input" name="deskripsi" id="deskripsi" cols="30" rows="10"></textarea>
                 </div>
                 <label class="upload" for="upload">Upload File :</label>
                 <button class="btn-upload">Upload</button>
@@ -80,4 +82,5 @@
         </div>
     </div>
 </body>
+
 </html>
