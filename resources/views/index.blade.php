@@ -23,7 +23,10 @@
                     <a href="#" class="nav-list">List Ticket</a>
                 </li>
                 <li class="list-unstyled" style="list-style:none;">
-                    <a href="login" class="logout" >Logout </a>
+                    <form action="logout" method="post">
+                        @csrf
+                        <button type="submit" class="logout">Logout</button>
+                    </form>
                 </li>
                 <a href="#"><img class="vector-btn-left" src="logo/vector-left.svg" alt=""></a>
             </ul>
