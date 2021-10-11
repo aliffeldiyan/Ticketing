@@ -11,18 +11,18 @@
     <nav>
     <div class="nav-container">
             <ul>
-                <li class="list-unstyled">
+                <li class="list-unstyled" style="list-style:none;">
                     <a href="#" class="nav-head">Quadran</a>
                 </li>
                 <hr class="hr-line">
-                <li class="list-unstyled">
+                <li class="list-unstyled" style="list-style:none;">
                     <a href="#" class="nav-ticket">Create Ticket</a>
                 </li>
                 <hr class="hr-line-ticket">
-                <li style="list-unstyled">
+                <li class="list-unstyled" style="list-style:none;">
                     <a href="#" class="nav-list">List Ticket</a>
                 </li>
-                <li style="list-unstyled">
+                <li class="list-unstyled" style="list-style:none;">
                     <a href="login" class="logout" >Logout </a>
                 </li>
                 <a href="#"><img class="vector-btn-left" src="logo/vector-left.svg" alt=""></a>
