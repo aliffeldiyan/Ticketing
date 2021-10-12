@@ -22,12 +22,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('login', [LoginController::class, 'index']);
+Route::get('login', [LoginController::class, 'index'])->name('login');
 Route::post('login', [LoginController::class, 'authenticate']);
+Route::post('logout', [LoginController::class, 'logout']);
 
 Route::get('register', [RegisterController::class, 'index']);
 Route::post('register', [RegisterController::class, 'store']);
 
+<<<<<<< HEAD
 Route::get('index', [IndexController::class, 'index']);
 
 Route::get('list', [ListController::class, 'index']);
+=======
+Route::get('index',[IndexController::class,'index'])->middleware('auth');
+>>>>>>> e3602e8b484e0bb6251144282171df9f68d9239e
