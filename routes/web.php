@@ -5,6 +5,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ListController;
+use App\Http\Controllers\HomeController;
 
 
 /*
@@ -29,10 +30,8 @@ Route::post('logout', [LoginController::class, 'logout']);
 Route::get('register', [RegisterController::class, 'index']);
 Route::post('register', [RegisterController::class, 'store']);
 
-<<<<<<< HEAD
-Route::get('index', [IndexController::class, 'index']);
+Route::get('index', [IndexController::class, 'index'])->middleware('auth');
 
 Route::get('list', [ListController::class, 'index']);
-=======
-Route::get('index',[IndexController::class,'index'])->middleware('auth');
->>>>>>> e3602e8b484e0bb6251144282171df9f68d9239e
+
+Route::get('home', [HomeController::class, 'index']);

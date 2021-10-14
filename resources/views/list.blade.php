@@ -11,7 +11,45 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Quadran</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index">create</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="list">list</a>
+                        </li>
+                    </ul>
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                        <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+                    </form>
+
+                    <div class="text-end">
+                        <!-- <a href="/login" class="btn btn-outline-light me-2" type="button" role="button">Login</a>
+                        <a href="/register" class="btn btn-warning" type="button" role="button">Sign up</a> -->
+                        <a href="/logout" class="btn btn-danger" type="button" role="button">Logout</a>
+
+                    </div>
+                    <!-- <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
             <a class="navbar-brand" href="#">Quadran</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +63,10 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="#">list</a>
                     </li>
-                    <!-- <li class="nav-item dropdown">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index">create</a>
+                    </li>
+                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Dropdown
                         </a>
@@ -38,9 +79,9 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li> -->
-                    <!-- <li class="nav-item">
+    <!-- <li class="nav-item">
                         <a class="nav-link disabled">Disabled</a>
-                    </li> -->
+                    </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -48,8 +89,8 @@
                 </form>
             </div>
         </div>
-    </nav>
-    <div class="container">
+    </nav> -->
+    <div class="container mt-3">
 
         <div class="bg-white">
             <div class="head-container-ticket">
@@ -151,7 +192,7 @@
                             </div>
                             <div>
                                 <span class="badge bg-warning">
-                                    Approve
+                                    Pending
                                 </span>
                             </div>
                         </div>

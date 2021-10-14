@@ -13,11 +13,11 @@
     <nav>
         <div class="nav-container">
             <ul>
-                <li class="list-unstyled" style="list-style:none;">
+                <li class="list-unstyled" style="list-style">
                     <a href="#" class="nav-head">Quadran</a>
                 </li>
                 <hr class="hr-line">
-                <li class="list-unstyled" style="list-style:none;">
+                <li class="list-unstyled" style="list-style">
                     <a href="#" class="nav-ticket">Create Ticket</a>
                 </li>
                 <hr class="hr-line-ticket">
