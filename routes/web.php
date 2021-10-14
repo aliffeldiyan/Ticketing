@@ -5,6 +5,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ListController;
+use App\Http\Controllers\HomeController;
 
 
 /*
@@ -32,3 +33,5 @@ Route::post('register', [RegisterController::class, 'store']);
 Route::get('index',[IndexController::class,'index'])->middleware('auth');
 
 Route::get('list', [ListController::class, 'index'])->middleware('auth');
+
+Route::get('home', [HomeController::class, 'index']);
