@@ -29,7 +29,7 @@
                         <a class="nav-link link-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Welcome, {{auth()->user()->name }}</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="index"><img src="logo/arrow-right.svg"> Create </a></li>
-                            <li><a class="dropdown-item" href="#">List</a></li>
+                            <li><a class="dropdown-item" href="list">List</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
