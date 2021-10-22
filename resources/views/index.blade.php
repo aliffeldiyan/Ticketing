@@ -1,83 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dashboard Ticketing</title>
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <nav>
-    <div class="nav-container">
-            <ul>
-                <li style="list-style:none">
-                    <a href="#" class="nav-head">Quadran</a>
-                </li>
-                <hr class="hr-line">
-                <li style="list-style:none">
-                    <a href="#" class="nav-ticket">Create Ticket</a>
-                </li>
-                <hr class="hr-line-ticket">
-                <li style="list-style:none">
-                    <a href="#" class="nav-list">List Ticket</a>
-                </li>
-                <li style="list-style:none">
-                    <a href="login" class="logout" >Logout </a>
-                </li>
-                <a href="#"><img class="vector-btn-left" src="logo/vector-left.svg" alt=""></a>
-            </ul>
-    </div>
-    </nav>
-    <div class="head-box">
-        <input class="search-border" type="text" placeholder="Search For...">
-        <div class="btn-search"></div>
-        <img class="search-btn" src="logo/search.svg" alt="">
-        <img class="mail-btn" src="logo/mail.svg" alt="">
-        <img class="shape-btn" src="logo/shape.svg" alt="">
-        <div class="line"></div>
-        <p class="your-name">Your Name</p>
-        <img class="icon-btn" src="logo/icon.svg" alt="">
-    </div>
-    <div class="header-container">
-        <div class="wrapper">
-            <form action="#">
-                <div class="head-container-ticket">
-                <h3>Create Ticket</h3>
+    <main>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" aria-label="Fifth navbar example">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Quadran</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample05">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <form>
+                            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                        </form>
+                    </ul>
+                    <li style="list-style:none;" class="nav-item dropdown">
+                        <a class="nav-link link-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Welcome, {{auth()->user()->name }}</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index"><img src="logo/arrow-right.svg"> Create </a></li>
+                            <li><a class="dropdown-item" href="list">List</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <form action="logout" method="POST">
+                                    @csrf
+                                    <button type="submit" class="dropdown-item">Logout</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
                 </div>
-                <label class="email" for="email">Email :</label>
-                <input class="email-input" type="email" placeholder="YourName@gmail.com" style="alignt-center" readOnly>
-                <label class="platform" for="platform">Platform :</label>
-                <select class="platform-input" name="plaftform" id="platform">
-                    <option value="Pilih Platform">Pilih Platform</option>
-                    <option value="Web">Web</option>
-                    <option value="Mobile">Mobile</option>
-                </select>
-                <label class="kategori" for="kategori">Kategori :</label>
-                <select class="kategori-input" name="kategori" id="kategori">
-                    <option value="Pilih Kategori">Pilih Kategori</option>
-                    <option value="Eror 404">Eror 404</option>
-                    <option value="Eror 502">Eror 502</option>
-                    <option value="Eror Api">Eror Api</option>
-                </select>
-                <label class="sub-kategori" for="sub-kategori">Sub Kategori :</label>
-                <select class="sub-kategori-input" name="sub-kategori" id="sub-kategori">
-                    <option value="Pilih Sub Kategori">Pilih Sub Kategori</option>
-                    <option value="Input Object">Input Object</option>
-                    <option value="Output">Output Object</option>
-                    <option value="Get Database">Get Database</option>
-                </select>
-                <label class="deskripsi" for="deskripsi">Deskripsi Masalah :</label>
-                <div class="border-text">
-                <textarea class="deskripsi-input" name="deskripsi" id="deskripsi" cols="30" rows="10"></textarea>
+            </div>
+        </nav>
+
+        <div class="container-lg">
+            <form class="form-floating" method="POST">
+                <input type="email" class="form-control" id="floatingInputInvalid" placeholder="name@example.com" value=" {{auth()->user()->email }}" readonly>
+                <label for="floatingInputInvalid">Email</label>
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option selected>Pilih Platform</option>
+                        <option value="1">Web</option>
+                        <option value="2">Mobile</option>
+                    </select>
+                    <label for="floatingSelect">Platform</label>
                 </div>
-                <label class="upload" for="upload">Upload File :</label>
-                <button class="btn-upload">Upload</button>
-                <p class="max-img">*Only jpg, jpeg, png, or pdf file are allowed, Maximum size 10MB</p>
-                <input class="kirim" type="submit" value="Kirim">
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option selected>Pilih Kategori</option>
+                        <option value="1">Eror 404</option>
+                        <option value="2">Eror 502</option>
+                        <option value="3">Eror API</option>
+                    </select>
+                    <label for="floatingSelect">Kategori</label>
+                </div>
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option selected>Pilih Sub Kategori</option>
+                        <option value="1">Input Object</option>
+                        <option value="2">Output Object</option>
+                        <option value="3">Get Database</option>
+                    </select>
+                    <label for="floatingSelect">Sub-Kategori</label>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Deskripsi</label>
+                </div>
             </form>
-            <p class="website">Your Website 2021</p>
-        </div>
-    </div>
+            <div class="d-grid gap-2">
+                <button class="btn btn-success mt-2" type="button">Upload</button>
+            </div>
+            <p class="text-center"><small>*Only jpg, jpeg, png, or pdf file are allowed, Maximum size 10MB</small></p>
+            <div class="d-grid gap-2">
+                <button class="btn btn-info" type="button">Kirim</button>
+            </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
+
 </html>

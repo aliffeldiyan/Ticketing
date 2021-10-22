@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
+use App\Http\Resources\UserResource;
 use App\Models\User;
 
 /*
@@ -33,4 +34,15 @@ Route::post('/user/create_token', function (Request $request) {
     }
 
     return response('No credentials provided.', 400);
+});
+Route::get('/user/{id}', function ($id) {
+    return new UserResource(User::findOrFail($id));
+});
+
+Route::get('/users', function () {
+    return UserResource::collection(User::all());
+});
+
+Route::post('/user/login', function (Request $request) {
+    $successful = User::validate($request->email, $request->password);
 });
